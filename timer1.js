@@ -14,7 +14,7 @@ for (let num of numbers ){
     setTimeout(() => {
       console.log(num, "seconds", '\x07');
     }, delay);
-    if (i <= (numbers.length - 2)) {
+    if (i < (numbers.length - 1)) {
       delay = delay + ((Number(numbers[i+1]) - Number(num)) * 1000);
     }
     i = i + 1;
